@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="name" content="content">
+	<title>Sample Page for Animator</title>
+	<link rel="stylesheet" href="css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<style>
+		body{
+			background-image: url('img/background-pattern.svg');
+		}
+		.hero{
+			background-color: transparent;
+			width: 100%;
+			height: 100%;
+		}
+		.hero *{
+			color: #f2f2f2 !important;
+		}
+		.hero-body{
+			padding: 140px 0px 90px 0px !important;
+		}
+		/*#title-lg,
+		#title-sm,*/
+		.circle-box{
+			visibility: hidden;
+		}
+		.rollOut{
+			animation-direction: reverse;
+		}
+		.circle-box{
+			border-radius: 50%;
+			width: 72px !important;
+			height: 72px !important;
+		}
+		.select>select>optgroup,
+		.select>select>optgroup *{
+			color: #808080 !important;
+		}
+		.select>select{
+			background-color: transparent !important;
+			color: #f2f2f2 !important;
+			border-color: #00d0b1;
+		}
+	</style>
+	<script src="js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+	<section class="hero is-large"> 
+		<div class="hero-body">
+			<div class="container">
+				<div class="header" align="center">
+					<div class="container" style="padding: 50px;">
+						<div class="columns is-mobile">
+							<div class="column">
+								<span class="tag is-danger circle-box is-large animated circle-box"></span>
+							</div>
+							<div class="column">
+								<span class="tag is-warning circle-box is-large animated circle-box"></span>
+							</div>
+							<div class="column">
+								<span class="tag is-info circle-box is-large animated circle-box"></span>
+							</div>
+							<div class="column">
+								<span class="tag is-success circle-box is-large animated circle-box"></span>
+							</div>
+							<div class="column">
+								<span class="tag is-primary circle-box is-large animated circle-box"></span>
+							</div>
+							<div class="column">
+								<span class="tag is-default circle-box is-large animated circle-box"></span>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<h1 class="title is-1 animated" id="title-lg">
+							jquery.animator.js 
+							<span class="tag is-info">BETA</span>
+						</h1>
+						<h2 class="subtitle animated" id="title-sm">	
+							New Jquery Plugin to support
+							<a href="https://daneden.github.io/animate.css/">
+								<strong>
+									Animate.css
+								</strong>
+							</a>
+						</h2>
+					</div>
+					<div class="container" style="padding: 20px;">
+						<span class="select is-large">
+							<select id="animation-menu">
+								<optgroup label="Attention Seekers">
+									<option value="bounce">bounce</option>
+									<option value="flash">flash</option>
+									<option value="pulse">pulse</option>
+									<option value="rubberBand">rubberBand</option>
+									<option value="shake">shake</option>
+									<option value="swing">swing</option>
+									<option value="tada">tada</option>
+									<option value="wobble">wobble</option>
+									<option value="jello">jello</option>
+								</optgroup>
+
+								<optgroup label="Bouncing Entrances">
+									<option value="bounceIn">bounceIn</option>
+									<option value="bounceInDown" selected>bounceInDown</option>
+									<option value="bounceInLeft">bounceInLeft</option>
+									<option value="bounceInRight">bounceInRight</option>
+									<option value="bounceInUp">bounceInUp</option>
+								</optgroup>
+
+								<optgroup label="Bouncing Exits">
+									<option value="bounceOut">bounceOut</option>
+									<option value="bounceOutDown">bounceOutDown</option>
+									<option value="bounceOutLeft">bounceOutLeft</option>
+									<option value="bounceOutRight">bounceOutRight</option>
+									<option value="bounceOutUp">bounceOutUp</option>
+								</optgroup>
+
+								<optgroup label="Fading Entrances">
+									<option value="fadeIn">fadeIn</option>
+									<option value="fadeInDown">fadeInDown</option>
+									<option value="fadeInDownBig">fadeInDownBig</option>
+									<option value="fadeInLeft">fadeInLeft</option>
+									<option value="fadeInLeftBig">fadeInLeftBig</option>
+									<option value="fadeInRight">fadeInRight</option>
+									<option value="fadeInRightBig">fadeInRightBig</option>
+									<option value="fadeInUp">fadeInUp</option>
+									<option value="fadeInUpBig">fadeInUpBig</option>
+								</optgroup>
+
+								<optgroup label="Fading Exits">
+									<option value="fadeOut">fadeOut</option>
+									<option value="fadeOutDown">fadeOutDown</option>
+									<option value="fadeOutDownBig">fadeOutDownBig</option>
+									<option value="fadeOutLeft">fadeOutLeft</option>
+									<option value="fadeOutLeftBig">fadeOutLeftBig</option>
+									<option value="fadeOutRight">fadeOutRight</option>
+									<option value="fadeOutRightBig">fadeOutRightBig</option>
+									<option value="fadeOutUp">fadeOutUp</option>
+									<option value="fadeOutUpBig">fadeOutUpBig</option>
+								</optgroup>
+
+								<optgroup label="Flippers">
+									<option value="flip">flip</option>
+									<option value="flipInX">flipInX</option>
+									<option value="flipInY">flipInY</option>
+									<option value="flipOutX">flipOutX</option>
+									<option value="flipOutY">flipOutY</option>
+								</optgroup>
+
+								<optgroup label="Lightspeed">
+									<option value="lightSpeedIn">lightSpeedIn</option>
+									<option value="lightSpeedOut">lightSpeedOut</option>
+								</optgroup>
+
+								<optgroup label="Rotating Entrances">
+									<option value="rotateIn">rotateIn</option>
+									<option value="rotateInDownLeft">rotateInDownLeft</option>
+									<option value="rotateInDownRight">rotateInDownRight</option>
+									<option value="rotateInUpLeft">rotateInUpLeft</option>
+									<option value="rotateInUpRight">rotateInUpRight</option>
+								</optgroup>
+
+								<optgroup label="Rotating Exits">
+									<option value="rotateOut">rotateOut</option>
+									<option value="rotateOutDownLeft">rotateOutDownLeft</option>
+									<option value="rotateOutDownRight">rotateOutDownRight</option>
+									<option value="rotateOutUpLeft">rotateOutUpLeft</option>
+									<option value="rotateOutUpRight">rotateOutUpRight</option>
+								</optgroup>
+
+								<optgroup label="Sliding Entrances">
+									<option value="slideInUp">slideInUp</option>
+									<option value="slideInDown">slideInDown</option>
+									<option value="slideInLeft">slideInLeft</option>
+									<option value="slideInRight">slideInRight</option>
+
+								</optgroup>
+								<optgroup label="Sliding Exits">
+									<option value="slideOutUp">slideOutUp</option>
+									<option value="slideOutDown">slideOutDown</option>
+									<option value="slideOutLeft">slideOutLeft</option>
+									<option value="slideOutRight">slideOutRight</option>
+
+								</optgroup>
+
+								<optgroup label="Zoom Entrances">
+									<option value="zoomIn">zoomIn</option>
+									<option value="zoomInDown">zoomInDown</option>
+									<option value="zoomInLeft">zoomInLeft</option>
+									<option value="zoomInRight">zoomInRight</option>
+									<option value="zoomInUp">zoomInUp</option>
+								</optgroup>
+
+								<optgroup label="Zoom Exits">
+									<option value="zoomOut">zoomOut</option>
+									<option value="zoomOutDown">zoomOutDown</option>
+									<option value="zoomOutLeft">zoomOutLeft</option>
+									<option value="zoomOutRight">zoomOutRight</option>
+									<option value="zoomOutUp">zoomOutUp</option>
+								</optgroup>
+
+								<optgroup label="Specials">
+									<option value="hinge">hinge</option>
+									<option value="rollIn">rollIn</option>
+									<option value="rollOut">rollOut</option>
+								</optgroup>
+							</select>
+						</span>
+					</div>
+					<div class="container" style="padding: 20px;">
+						<a class="button is-primary is-outlined is-large" id="btn-clickMe">Click Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+
+	</div>
+	<script src="js/jquery.animator-beta.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			if($('#title-lg').isOnScreen()){
+				$('#title-lg').addAnimation('lightSpeedIn');
+			}
+			if($('#title-sm').isOnScreen()){
+				$('#title-sm').addAnimation('fadeInUp');
+			}
+			if($('.circle-box').isOnScreen()){
+				setTimeout(function(){
+					$('.circle-box').addAnimation('bounceInDown', 500);
+				}, 500);
+
+			}
+			var oldClass;
+			$('#btn-clickMe').click(function(event) {
+				var animatedClassName = $('#animation-menu').val();
+				var box = $('.circle-box');
+
+				if (box.hasClass('bounceInDown')) {box.removeAnimation('bounceInDown');}
+				if (box.hasClass(oldClass)) {box.removeAnimation(oldClass);}
+
+				box.addAnimation( animatedClassName, 500);
+				box.removeAnimation(animatedClassName);
+				oldClass = animatedClassName;
+			});
+		});
+	</script>
+</body>
+</html>
