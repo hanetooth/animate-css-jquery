@@ -7,6 +7,7 @@
 	<title>Sample Page for Animator</title>
 	<link rel="stylesheet" href="sample/css/bulma.css">
 	<link rel="stylesheet" type="text/css" href="sample/css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<style>
 		body{
 			background-image: url('sample/img/background-pattern.svg');
@@ -27,10 +28,18 @@
 			top: 20px !important;
 			right: 20px !important;
 		}
+		.container-icon{
+			position: absolute !important;
+			bottom: 20px !important;
+			right: 20px !important;
+		}
 		/*#title-lg,
 		#title-sm,*/
 		.circle-box{
 			visibility: hidden;
+		}
+		.icon-box *{
+			color: #f2f2f2;
 		}
 		.rollOut{
 			animation-direction: reverse;
@@ -225,10 +234,14 @@
 				</div>
 			</div>
 		</div>
+		<div class="container container-icon" style="padding: 20px;">
+			<a href="https://github.com/zugoripls/jquery.animator" class="icon-box">
+				<span class="icon is-large">
+					<i class="fa fa-github"></i>
+				</span>
+			</a>
+		</div>
 	</section>
-	<div class="container">
-
-	</div>
 	<script src="sample/js/jquery.animator-beta.js"></script>
 	<script>
 		jQuery(document).ready(function($) {
