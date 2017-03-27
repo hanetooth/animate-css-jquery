@@ -1,5 +1,5 @@
-# jquery.animator.js
-Jquery plugin for <a href="http://daneden.github.io/animate.css">animate.css</a>.<!--  by <a href="https://github.com/daneden" >Daniel Eden</a> -->
+# jquery.animator.js with <a href="http://daneden.github.io/animate.css">animate.css</a>
+Jquery plugin for <a href="http://daneden.github.io/animate.css">animate.css</a>.
 
 # Demo page
 ![Jquery for Animator.css](http://i.imgur.com/0AFMVVo.png)
