@@ -1,16 +1,16 @@
 # jquery.animator.js with <a href="http://daneden.github.io/animate.css">animate.css</a>
 Jquery plugin for <a href="http://daneden.github.io/animate.css">animate.css</a>.
-<hr>
+
 # Demo page
 ![Jquery for Animator.css](http://i.imgur.com/yB1Eqig.png)
 <a href="https://zugoripls.github.io/animate-css-jquery/" title="demo page">https://zugoripls.github.io/animate-css-jquery/</a>.
-<hr>
+
 ## Installation
 To use [**jquery.animator.js**](https://zugoripls.github.io/animate-css-jquery/") in your project you must firstly need [**Animate.css**](http://daneden.github.io/animate.css) and [**jquery**](https://jquery.com/).
 
 ### Download
 <a href="https://github.com/zugoripls/animate-css-jquery/archive/master.zip" title="Download zip"><strong>Download</strong></a> in <code>.zip</code>. 
-<hr>
+
 ## Basic Usage
 Example to include in your documents.
 ```html
@@ -24,4 +24,3 @@ Example to include in your documents.
 <script src="src/dist/jquery.animator-beta.min.js"></script>
 <!-- jquery.animator.js -->
 ```
-<hr>
