@@ -2,11 +2,14 @@
 Jquery plugin for <a href="http://daneden.github.io/animate.css">animate.css</a>.
 
 # Demo page
-![Jquery for Animator.css](http://i.imgur.com/0AFMVVo.png)
-<a href="https://zugoripls.github.io/jquery.animator/" title="demo page">https://zugoripls.github.io/jquery.animator/</a>.
+![Jquery for Animator.css](http://i.imgur.com/yB1Eqig.png)
+<a href="https://zugoripls.github.io/animate-css-jquery/" title="demo page">https://zugoripls.github.io/animate-css-jquery/</a>.
 
 ## Installation
-To use [**jquery.animator.js**](https://zugoripls.github.io/jquery.animator/") in your project you must firstly need [**Animate.css**](http://daneden.github.io/animate.css) and [**jquery**](https://jquery.com/).
+To use [**jquery.animator.js**](https://zugoripls.github.io/animate-css-jquery/") in your project you must firstly need [**Animate.css**](http://daneden.github.io/animate.css) and [**jquery**](https://jquery.com/).
+
+### Download
+<a href="https://github.com/zugoripls/animate-css-jquery/archive/master.zip" title="Download zip"><strong>Download</strong></a> in <code>.zip</code>. 
 
 ## Basic Usage
 Example to include in your documents.
