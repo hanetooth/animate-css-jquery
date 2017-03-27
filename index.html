@@ -37,6 +37,9 @@
 		#title-sm,*/
 		.circle-box{
 			visibility: hidden;
+			color: #404040 !important;
+			font-size: 48px !important;
+			font-weight: 100 !important;
 		}
 		.icon-box *{
 			color: #f2f2f2;
@@ -72,22 +75,22 @@
 					<div class="container" style="padding: 50px;">
 						<div class="columns is-mobile">
 							<div class="column">
-								<span class="tag is-danger circle-box is-large animated circle-box"></span>
+								<span class="tag is-danger is-large animated circle-box">S</span>
 							</div>
 							<div class="column">
-								<span class="tag is-warning circle-box is-large animated circle-box"></span>
+								<span class="tag is-warning is-large animated circle-box">A</span>
 							</div>
 							<div class="column">
-								<span class="tag is-info circle-box is-large animated circle-box"></span>
+								<span class="tag is-info is-large animated circle-box">M</span>
 							</div>
 							<div class="column">
-								<span class="tag is-success circle-box is-large animated circle-box"></span>
+								<span class="tag is-success is-large animated circle-box">P</span>
 							</div>
 							<div class="column">
-								<span class="tag is-primary circle-box is-large animated circle-box"></span>
+								<span class="tag is-primary is-large animated circle-box">L</span>
 							</div>
 							<div class="column">
-								<span class="tag is-default circle-box is-large animated circle-box"></span>
+								<span class="tag is-default is-large animated circle-box">E</span>
 							</div>
 						</div>
 					</div>
@@ -236,7 +239,7 @@
 		</div>
 		<div class="container container-icon" style="padding: 20px;">
 			<a href="https://github.com/zugoripls/jquery.animator" class="icon-box">
-				<span class="icon is-large">
+				<span class="icon is-large animated infinite bounce">
 					<i class="fa fa-github"></i>
 				</span>
 			</a>
@@ -253,20 +256,21 @@
 			}
 			if($('.circle-box').isOnScreen()){
 				setTimeout(function(){
-					$('.circle-box').addAnimation('bounceInDown', 500);
-				}, 500);
-
+					$('.circle-box').addAnimation('bounceInDown', 200);
+				}, 400);
 			}
 			var oldClass;
+
 			$('#btn-clickMe').click(function(event) {
-				var animatedClassName = $('#animation-menu').val();
+
 				var box = $('.circle-box');
+
+				var animatedClassName = $('#animation-menu').val();
 
 				if (box.hasClass('bounceInDown')) {box.removeAnimation('bounceInDown');}
 				if (box.hasClass(oldClass)) {box.removeAnimation(oldClass);}
 
-				box.addAnimation( animatedClassName, 500);
-				box.removeAnimation(animatedClassName);
+				box.addAnimation( animatedClassName, 200);
 				oldClass = animatedClassName;
 			});
 		});
