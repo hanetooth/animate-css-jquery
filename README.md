@@ -12,7 +12,7 @@ To use [**jquery.animator.js**](https://zugoripls.github.io/animate-css-jquery/"
 <a href="https://github.com/zugoripls/animate-css-jquery/archive/master.zip" title="Download zip"><strong>Download</strong></a> in <code>.zip</code>. 
 
 ## Basic Usage
-# Example to include in your documents.
+<strong>Example to include in your documents.</strong>
 ```html
 <!-- animate.css -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> 
