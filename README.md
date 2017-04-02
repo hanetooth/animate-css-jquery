@@ -25,3 +25,35 @@ To use [**jquery.animator.js**](https://zugoripls.github.io/animate-css-jquery/"
 <!-- jquery.animator.js -->
 ```
 
+<strong>Adding animation to HTML elements.</strong>
+At first, you should read how to use <a href="http://daneden.github.io/animate.css">animate.css</a>.
+
+# Animating with <a href="http://daneden.github.io/animate.css">animate.css</a>
+
+<strong>Here are a simple example of how to animate a <code>h1</code> tag.</strong>
+```
+<h1 class="animated bounceInDown">HELLO WORLD</h1>
+```
+<strong>Add <code>infinite</code> class to keep animating till to the end of the world.</strong>
+```
+<h1 class="animated bounceInDown infinite">HELLO WORLD</h1>
+```
+
+# Animating with <a href="http://daneden.github.io/animate.css">animate.css</a> + <a href="https://zugoripls.github.io/animate-css-jquery/">jquery.animator.js</a>.
+
+<p>First, add <code>animated</code> class in the element.</p>
+```
+<!-- HTMl -->
+<h1 class="animated" id="greeting">HELLO WORLD</h1>
+<!-- HTMl -->
+```
+<p>Second, add one of the various animator class with the help of <a href="http://daneden.github.io/animate.css">animate.css</a> + <a href="https://zugoripls.github.io/animate-css-jquery/">jquery.animator.js</a> like ...</p>
+
+```
+<script>
+	$('#title-lg').addAnimation('lightSpeedIn');
+</script>
+```
+
+
+
