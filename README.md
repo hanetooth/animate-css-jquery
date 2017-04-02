@@ -42,11 +42,13 @@ At first, you should read how to use <a href="http://daneden.github.io/animate.c
 # Animating with <a href="http://daneden.github.io/animate.css">animate.css</a> + <a href="https://zugoripls.github.io/animate-css-jquery/">jquery.animator.js</a>.
 
 <p>First, add <code>animated</code> class in the element.</p>
+
 ```
 <!-- HTMl -->
 <h1 class="animated" id="greeting">HELLO WORLD</h1>
 <!-- HTMl -->
 ```
+
 <p>Second, add one of the various animator class with the help of <a href="http://daneden.github.io/animate.css">animate.css</a> + <a href="https://zugoripls.github.io/animate-css-jquery/">jquery.animator.js</a> like ...</p>
 
 ```
